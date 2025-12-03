@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Workspace/src/1006_Practice1.ccp&apos; to &apos;1006_Practice1.cpp&apos;" description="Rename resource &apos;1006_Practice1.ccp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/1006_Practice1.ccp" name="1006_Practice1.cpp" stamp="1759759557424" updateReferences="true"/>
+</session>

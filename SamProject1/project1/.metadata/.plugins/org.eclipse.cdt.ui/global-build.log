@@ -1,0 +1,150 @@
+08:20:30 **** Clean-only build of configuration Debug for project Workspace ****
+make clean 
+rm -rf ./src/HW2_11.14.d ./src/HW2_11.14.o
+rm -rf Workspace
+ 
+08:20:30 **** Build of configuration Debug for project Workspace ****
+make all 
+Building file: ../src/1001_Practice1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/1001_Practice1.d" -MT"src/1001_Practice1.o" -o "src/1001_Practice1.o" "../src/1001_Practice1.cpp"
+Finished building: ../src/1001_Practice1.cpp
+ 
+Building target: Workspace
+Invoking: MacOS X C++ Linker
+g++  -o "Workspace"  ./src/1001_Practice1.o   
+Finished building target: Workspace
+ 
+08:21:20 **** Incremental Build of configuration Debug for project Workspace ****
+make all 
+Building file: ../src/1001_Practice2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/1001_Practice2.d" -MT"src/1001_Practice2.o" -o "src/1001_Practice2.o" "../src/1001_Practice2.cpp"
+Finished building: ../src/1001_Practice2.cpp
+ 
+Building target: Workspace
+Invoking: MacOS X C++ Linker
+g++  -o "Workspace"  ./src/1001_Practice2.o   
+Undefined symbols for architecture arm64:
+  "_main", referenced from:
+      <initial-undefines>
+ld: symbol(s) not found for architecture arm64
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Workspace] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:25:18 **** Incremental Build of configuration Debug for project Workspace ****
+make all 
+Building file: ../src/1001_Practice2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/1001_Practice2.d" -MT"src/1001_Practice2.o" -o "src/1001_Practice2.o" "../src/1001_Practice2.cpp"
+../src/1001_Practice2.cpp:29:67: warning: variable 'average' is uninitialized when used here [-Wuninitialized]
+   29 |         cout << "There is an average of " << setprecision(1) << fixed << average
+      |                                                                          ^~~~~~~
+../src/1001_Practice2.cpp:16:16: note: initialize the variable 'average' to silence this warning
+   16 |         double average;
+      |                       ^
+      |                        = 0.0
+1 warning generated.
+Finished building: ../src/1001_Practice2.cpp
+ 
+Building target: Workspace
+Invoking: MacOS X C++ Linker
+g++  -o "Workspace"  ./src/1001_Practice2.o   
+Undefined symbols for architecture arm64:
+  "countWords(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)", referenced from:
+      _main in 1001_Practice2.o
+  "countSentences(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)", referenced from:
+      _main in 1001_Practice2.o
+ld: symbol(s) not found for architecture arm64
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Workspace] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:26:03 **** Incremental Build of configuration Debug for project Workspace ****
+make all 
+Building file: ../src/1001_Practice2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/1001_Practice2.d" -MT"src/1001_Practice2.o" -o "src/1001_Practice2.o" "../src/1001_Practice2.cpp"
+Finished building: ../src/1001_Practice2.cpp
+ 
+Building target: Workspace
+Invoking: MacOS X C++ Linker
+g++  -o "Workspace"  ./src/1001_Practice2.o   
+Undefined symbols for architecture arm64:
+  "countWords(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)", referenced from:
+      _main in 1001_Practice2.o
+  "countSentences(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)", referenced from:
+      _main in 1001_Practice2.o
+ld: symbol(s) not found for architecture arm64
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Workspace] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:26:21 **** Incremental Build of configuration Debug for project Workspace ****
+make all 
+Building file: ../src/1001_Practice2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/1001_Practice2.d" -MT"src/1001_Practice2.o" -o "src/1001_Practice2.o" "../src/1001_Practice2.cpp"
+Finished building: ../src/1001_Practice2.cpp
+ 
+Building target: Workspace
+Invoking: MacOS X C++ Linker
+g++  -o "Workspace"  ./src/1001_Practice2.o   
+Undefined symbols for architecture arm64:
+  "countWords(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)", referenced from:
+      _main in 1001_Practice2.o
+  "countSentences(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)", referenced from:
+      _main in 1001_Practice2.o
+ld: symbol(s) not found for architecture arm64
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Workspace] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:27:20 **** Incremental Build of configuration Debug for project Workspace ****
+make all 
+Building file: ../src/1001_Practice2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/1001_Practice2.d" -MT"src/1001_Practice2.o" -o "src/1001_Practice2.o" "../src/1001_Practice2.cpp"
+../src/1001_Practice2.cpp:29:67: warning: variable 'average' is uninitialized when used here [-Wuninitialized]
+   29 |         cout << "There is an average of " << setprecision(1) << fixed << average
+      |                                                                          ^~~~~~~
+../src/1001_Practice2.cpp:16:16: note: initialize the variable 'average' to silence this warning
+   16 |         double average;
+      |                       ^
+      |                        = 0.0
+1 warning generated.
+Finished building: ../src/1001_Practice2.cpp
+ 
+Building target: Workspace
+Invoking: MacOS X C++ Linker
+g++  -o "Workspace"  ./src/1001_Practice2.o   
+Undefined symbols for architecture arm64:
+  "countWords(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)", referenced from:
+      _main in 1001_Practice2.o
+  "countSentences(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)", referenced from:
+      _main in 1001_Practice2.o
+ld: symbol(s) not found for architecture arm64
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Workspace] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:07:12 **** Incremental Build of configuration Debug for project Workspace ****
+make all 
+Building file: ../src/1006_Practice1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/1006_Practice1.d" -MT"src/1006_Practice1.o" -o "src/1006_Practice1.o" "../src/1006_Practice1.cpp"
+Finished building: ../src/1006_Practice1.cpp
+ 
+Building target: Workspace
+Invoking: MacOS X C++ Linker
+g++  -o "Workspace"  ./src/1006_Practice1.o   
+Finished building target: Workspace
+ 
+23:28:19 **** Incremental Build of configuration Debug for project Workspace ****
+make all 
+Building file: ../src/HW3_13.4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HW3_13.4.d" -MT"src/HW3_13.4.o" -o "src/HW3_13.4.o" "../src/HW3_13.4.cpp"
+Finished building: ../src/HW3_13.4.cpp
+ 
+Building target: Workspace
+Invoking: MacOS X C++ Linker
+g++  -o "Workspace"  ./src/HW3_13.4.o   
+Finished building target: Workspace
+ 
