@@ -1,0 +1,16 @@
+/*
+** client.c -- a stream socket client 
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+// define macros
+# define SERVER_PORT "2875" // the port client will be connecting to
+# define MAXDATASIZE 100 // max number of bytes we can get at once 
+
+int main(int argc, char *argv[])
+{
+    printf("This is the client file");
+    return 0;
+}

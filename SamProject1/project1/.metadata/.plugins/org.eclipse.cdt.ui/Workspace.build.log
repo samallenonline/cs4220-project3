@@ -1,0 +1,15 @@
+23:28:19 **** Incremental Build of configuration Debug for project Workspace ****
+make all 
+Building file: ../src/HW3_13.4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HW3_13.4.d" -MT"src/HW3_13.4.o" -o "src/HW3_13.4.o" "../src/HW3_13.4.cpp"
+Finished building: ../src/HW3_13.4.cpp
+ 
+Building target: Workspace
+Invoking: MacOS X C++ Linker
+g++  -o "Workspace"  ./src/HW3_13.4.o   
+Finished building target: Workspace
+ 
+
+23:28:20 Build Finished. 0 errors, 0 warnings. (took 1s.123ms)
+

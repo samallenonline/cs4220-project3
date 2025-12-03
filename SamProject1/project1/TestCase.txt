@@ -1,0 +1,95 @@
+CS4220-001 Computer Networks
+Project 1: Test Case Descriptions
+Sam Allen
+-------------------------------------------------------------------------------------
+Test Case ID: filetransfer_01
+
+Test Case Description: 
+Test that data can be successfully sent from server to client and written to a 
+specified file location.
+
+Prerequisites: 
+This test requires a stable internet connection, access to the UCCS 
+VPN (if testing from outside the UCCS campus), access to the UCCS Linux servers,
+and a computer. To set-up the program for compilation and running, please refer to 
+the instructions provided in the README.txt file.
+
+Environment Information:
+OS: macOS Sequoia 15.4.1
+System: Macbook Air M1, 2020
+
+Test Scenario: 
+After set-up, check that the client is able to request a file from the 
+server and have the data successfully transferred and copied to the specified file 
+location in client_files. 
+
+Test Steps:
+1. Set-up the client and server using the instructions provided in the README.txt file
+2. Enter the command ```./client localhost transmit_me.txt``` in the client terminal
+3. Observe the messages printed to terminal
+4. Navigate to client_files/received_file to ensure that the file has been received 
+and copied successfully. Check for data loss or corruption.
+
+Expected Results:
+The data contained in client_files/received_file matches the contents of transmit_me.txt
+exactly.
+
+Actual Results (data contained in client_files/received_file):
+The data contained in client_files/received_file does not match the contents of
+transmit_me.txt, and appears to be corrupted. The first portion of the text is 
+missing, and garbage characters are present. 
+
+Status: Fail
+
+Comments:
+According to the debugging statements which have been printed to the terminal, the client 
+resends the acknowledgment for the first frame every time without fail. It seems that the 
+server does not receive the first frame. However, these statements also indicate that the 
+rest of the data is transmitted and received successfully.
+
+-------------------------------------------------------------------------------------
+Test Case ID: filetransfer_02
+
+Test Case Description: 
+Test that data can be successfully sent from server to client and written to a 
+specified file location.
+
+Prerequisites: 
+This test requires a stable internet connection, access to the UCCS 
+VPN (if testing from outside the UCCS campus), access to the UCCS Linux servers,
+and a computer. To set-up the program for compilation and running, please refer to 
+the instructions provided in the README.txt file.
+
+Environment Information:
+OS: macOS Sequoia 15.4.1
+System: Macbook Air M1, 2020
+
+Test Scenario: 
+After set-up, check that the client is able to request a file from the 
+server and have the data successfully transferred and copied to the specified file 
+location in client_files. 
+
+Test Steps:
+1. Set-up the client and server using the instructions provided in the README.txt file
+2. Enter the command ```./client localhost transmit_me.txt``` in the client terminal
+3. Observe the messages printed to terminal
+4. Navigate to client_files/received_file to ensure that the file has been received 
+and copied successfully. Check for data loss or corruption.
+
+Expected Results (data contained in client_files/received_file):
+The data contained in client_files/received_file matches the contents of transmit_me.txt
+exactly.
+
+Actual Results (data contained in client_files/received_file):
+The data contained in client_files/received_file matches the contents of transmit_me.txt
+exactly.
+
+Status: Pass
+
+Comments:
+After diagnosing the issue and ensuring that the client and server sequence
+numbers are synchronized, the data from the file transmit_me.txt is now 
+successfully transmitted from server to client and written to the file location 
+client_files/received_file. The debugging comments printed to the terminal no 
+longer indicates any retransmission events, and all sent/received sequence numbers
+and acknowledgments are as expected. 
