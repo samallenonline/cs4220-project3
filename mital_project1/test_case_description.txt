@@ -1,0 +1,47 @@
+Test Case 1 : File doesn't exist
+1. Start serverside
+2. Start clientside
+Serverside outputs "Error: Something went wrong while opening file; check it exists", then serverside and clientside close
+
+Test Case 2 : input_file.txt contains FRAME_SIZE number of bytes
+1. Start serverside
+2. Start clientside
+Client outputs client_files/recieved.txt, which exactly matches input_file.txt, then serverside and clientside close
+
+Test Case 3 : input_file.txt contains less than FRAME_SIZE number of bytes
+1. Start serverside
+2. Start clientside
+Client outputs client_files/recieved.txt, which exactly matches input_file.txt, then serverside and clientside close
+
+Test Case 4 : input_file.txt contains FRAME_SIZE + 1 number of bytes
+1. Start serverside
+2. Start clientside
+Client outputs client_files/recieved.txt, which exactly matches input_file.txt, then Serverside and clientside close
+
+Test Case 5: client started, but not server
+1. Start clientside
+Client outputs "Error: Something went wrong when connecting server; status: -1", then client closes
+
+Test Case 6 : server is closed before entire file is transferred
+1. Start serverside
+2. Start clientside
+3. Close serverside
+Client outputs "Lost connection to server, closing connection...", then client closes
+
+Test Case 7 : client is closed before entire file is transferred
+1. Start serverside
+2. Start clientside
+3. Close clientside
+Server outputs "Lost connection to client, closing server connection...", then server closes
+
+Test Case 8 : Server sends sequence number of 0 when client was expected a sequence number of 1
+Prerequsite: Must have a slow, inconsistent connection
+1. Start serverside
+2. Start clientside
+3. Server sends data
+4. Timeout occurs
+5. Server sends data
+6. Client recieves data
+7. Client recieves data
+Client sends back ACK of 1, server reevaluates the sequence number and resends data, so everything is back in sync
+
